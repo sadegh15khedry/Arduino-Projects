@@ -1,0 +1,37 @@
+// C++ code
+int OUTPUT_PIN1 = 3;
+int OUTPUT_PIN2 = 5;
+int OUTPUT_PIN3 = 6;
+void setup()
+{
+  pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(OUTPUT_PIN1, OUTPUT);
+  pinMode(OUTPUT_PIN2, OUTPUT);
+  pinMode(OUTPUT_PIN3, OUTPUT);
+
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  //digitalWrite(OUTPUT_PIN1, HIGH);
+  //digitalWrite(OUTPUT_PIN2, HIGH);
+  //digitalWrite(OUTPUT_PIN, HIGH);
+
+  analogWrite(OUTPUT_PIN3, 0);
+  analogWrite(OUTPUT_PIN2, 20);
+  analogWrite(OUTPUT_PIN1, 150);
+  delay(5000); // Wait for 1000 millisecond(s)
+  
+  analogWrite(OUTPUT_PIN3, 150);
+  analogWrite(OUTPUT_PIN2, 0);
+  analogWrite(OUTPUT_PIN1, 20);
+  delay(5000); // Wait for 1000 millisecond(s)
+  
+  analogWrite(OUTPUT_PIN3, 20);
+  analogWrite(OUTPUT_PIN2, 150);
+  analogWrite(OUTPUT_PIN1, 0);
+  delay(5000); // Wait for 1000 millisecond(s)
+  
+
+}
