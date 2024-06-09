@@ -22,7 +22,7 @@ This project demonstrates how to control an RGB LED using an Arduino.
 3. Upload the `rgbLed.ino` file to your Arduino board using the Arduino IDE.
 
 ## Usage
-- Connect the RGB LED to the appropriate pins as defined in the `rgbLed.ino` file.
+- Connect the RGB LED to the appropriate pins.
 - Power on the Arduino to see the RGB LED change colors.
 
 ## License
